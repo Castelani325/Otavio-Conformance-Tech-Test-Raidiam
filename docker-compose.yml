@@ -1,0 +1,7 @@
+services:
+  authserver:
+    build:
+      context: authserver
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8081
