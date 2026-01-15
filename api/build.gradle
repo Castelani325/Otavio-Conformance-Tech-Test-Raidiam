@@ -22,11 +22,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.apache.commons:commons-lang3:3.20.0'
 
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
-	// necessarie dependency to deal with oauth2 in spring
+    // By Otavio
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+    // necessarie dependency to deal with Spring Security + oauth2
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // Lets Test Those endpoints
+
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'org.springframework.security:spring-security-test'
+
 }
 
 tasks.named('test') {
