@@ -72,7 +72,7 @@ public class apiSecurityTest {
 
 
     @Test
-    @DisplayName("/random - With valid Token")
+    @DisplayName("/random - With valid Token + If corret format")
     public void testBDD_WhenCallingGetRandomWithValidToken_ShouldFindNumbersandCode200() throws Exception {
 
         mockMvc.perform(get("/api/random").with(opaqueToken()))
