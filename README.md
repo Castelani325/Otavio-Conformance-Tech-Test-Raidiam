@@ -1,4 +1,4 @@
-
+[![Java CI with Gradle](https://github.com/Castelani325/Otavio-Conformance-Tech-Test-Raidiam/actions/workflows/gradle.yml/badge.svg)](https://github.com/Castelani325/Otavio-Conformance-Tech-Test-Raidiam/actions/workflows/gradle.yml)
 # OAuth2 API Protection Challenge 🛡️
 
 Solution for the technical challenge of implementing security in a REST API using **Spring Boot** and **OAuth2**.
@@ -60,7 +60,6 @@ The Auth Server is a prerequisite and runs in a container. In the project root, 
 
 bash
 ```docker compose up -d```
-
 
 
 *Wait until the service is active at `http://localhost:8081`.*
