@@ -1,5 +1,8 @@
-
+[![Java CI with Gradle](https://github.com/Castelani325/Otavio-Conformance-Tech-Test-Raidiam/actions/workflows/gradle.yml/badge.svg)](https://github.com/Castelani325/Otavio-Conformance-Tech-Test-Raidiam/actions/workflows/gradle.yml)
 # OAuth2 API Protection Challenge 🛡️
+-> This README was created with Gemini's HELP.*
+
+
 
 Solution for the technical challenge of implementing security in a REST API using **Spring Boot** and **OAuth2**.
 
@@ -7,9 +10,8 @@ This project transforms an open API into a secure **Resource Server**, capable o
 
 ## 🔗 Challenge Context
 
-This project is the resolution for the technical case proposed in the following repository:
+This project is a solution for the technical case proposed by tech team:
 
-> **Challenge Repository on GitLab -> https://gitlab.com/raidiam-conformance/open-finance/conformance-tech-task-one)**
 
 **Objective:** Protect the endpoints `/api/now` and `/api/random`, which were originally public, utilizing an authentication server provided via Docker.
 
@@ -60,7 +62,6 @@ The Auth Server is a prerequisite and runs in a container. In the project root, 
 
 bash
 ```docker compose up -d```
-
 
 
 *Wait until the service is active at `http://localhost:8081`.*
@@ -135,6 +136,3 @@ bash
 1. **Explicit Configuration:** Use of `@EnableWebSecurity` and a dedicated `SecurityConfig` class to ensure full control over the filter chain, rather than relying solely on Spring's auto-configuration.
 2. **Opaque Token Handling:** Specific configuration in `application.properties` pointing to the introspection endpoint (`/token/introspect`), as required by the limitation of not supporting JWTs.
 
----
--> This document was created with the help of Gemini.*
-```
